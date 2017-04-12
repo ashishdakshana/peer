@@ -84,7 +84,7 @@ final class Entries {
             try{
 		this.entries = Collections
 				.synchronizedMap(new FileHashMap<ID, Set<Entry>>("chorddata"));
-                System.out.println("created entries mapfile");
+               // System.out.println("created entries mapfile");
             }
             catch(Exception e)
             {
@@ -149,7 +149,7 @@ final class Entries {
 				this.entries.put(entryToAdd.getId(), values);
 			}
 			//values.add(entryToAdd);
-                        System.out.println("added value in add function");
+                      //  System.out.println("added value in add function");
 		}
 		if (debugEnabled) {
 			Entries.logger.debug("Entry was added: " + entryToAdd);
